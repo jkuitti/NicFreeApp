@@ -1,5 +1,5 @@
 import type { User } from "../../types/user";
-import { CircleCheck, CircleDot, Circle, DessertIcon } from "lucide-react";
+import { CircleCheck, CircleDot, Circle } from "lucide-react";
 
 const milestoneList = [
   {
