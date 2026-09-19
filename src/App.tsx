@@ -3,10 +3,11 @@ import Login from "./pages/Login";
 import Homepage from "./pages/Homepage";
 import ProtectedRoute from "./ProtectedRoute";
 import StartPage from "./pages/StartPage";
+import AcceptInvite from "./pages/AcceptInvite";
 
 const App = () => {
   return (
-    <div className="m-5">
+    <div className="m-5 flex items-center justify-center">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route
@@ -22,6 +23,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <StartPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/accept-invite"
+          element={
+            <ProtectedRoute>
+              <AcceptInvite />
             </ProtectedRoute>
           }
         />
